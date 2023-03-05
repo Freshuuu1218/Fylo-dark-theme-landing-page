@@ -54,6 +54,7 @@ main{
 #pattern{
     position: absolute;
     top: 6%;
+    width: 100vw;
 }
 .intro-content{
     position: relative;
@@ -307,4 +308,226 @@ footer ul li{
 }
 .social i:nth-child(2){
     margin: 0 1em;
+}
+@media(min-width:768px){
+    /* header */
+    header {
+        padding: 5em;
+    }
+    header .logo {
+        width: 12.5%;
+    }
+    header ul {
+        font-size: 1em;
+    }
+    header ul li:nth-child(2) {
+        margin: 0 3em;
+    }
+    header ul li:hover{
+        font-weight: 700;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    /* intro */
+    #intro {
+        padding-top: 0;
+        background-image: none;
+        background-color: var(--introBG);
+        padding-bottom:7em;
+    }
+    #pattern {
+        top: 20%;
+    }    
+    .intro-content img {
+        width: 50%;
+    }
+    .intro-content h1 {
+        font-size: 2.4em;
+        width: 50%;
+        margin-bottom: .9em;
+    }
+    .intro-content p {
+        font-size: 1.2em;
+        width: 40%;
+        line-height: 1.75em;
+    }
+    .intro-content button {
+        font-size: 1em;
+        width: 20%;
+    }
+    .intro-content button:hover{
+        background-image: none;
+        background-color: hsl(176, 68%, 64%);
+        cursor: pointer;
+    }
+    /* features */
+    #features {
+        padding: 5em 20% 5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3em;
+    }
+    .feature:nth-child(2) h2{
+        margin-top: 1.25em;
+    }
+    .feature p{
+        width: 82.5%;
+    }
+    #productive {
+        display: flex;
+        flex-direction: row;
+        padding: 0 8em;
+        padding-bottom: 10em;
+    }
+    .productive-text{
+        display: flex;
+        flex-direction: column;
+        margin-left: 4em;
+    }
+    #productive img {
+        width: 50%;
+        margin-bottom: 0;
+    }
+    #productive h2{
+        font-size: 2.4em;
+        width: 70%;
+    }
+    #productive p {
+        width: 100%;
+        font-size: 1em;
+    }
+    #productive .link {
+        margin: 0 auto 0 0;
+    }
+    #productive .link a {
+        font-size: .9em;
+    }
+    #productive .link:hover{
+        border-bottom-color: white;
+        cursor: pointer;
+    }
+    #productive .link:hover>a{
+        
+        color: white;
+    }
+    /* testimonials section */
+    #testimonials {
+        padding: 0 8em;
+        padding-bottom: 20em;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+    #quotes {
+        position: absolute;
+        width: 3em;
+        margin-left: 0;
+        left: 9em;
+        top: -1.75em;
+    }
+    .testimonial {
+        z-index: 10;
+        width: 90%;
+        padding: 1.5em;    
+    }
+    .testimonial p {
+        font-size: .85em;
+        line-height: 1.75em;
+        letter-spacing: .04em;
+    }
+    /* early access section */
+    #early-access {
+        width: 60%;
+        left: 20%;
+        padding: 2em 4em;
+    }
+    #early-access h2 {
+        font-size: 2em;
+    }
+    #early-access p{
+        width: 82%;
+    }
+    .form{
+        display: flex;
+        width: 100%;
+        margin-top: 1.5em;
+    }
+    .input {
+        width: 70%;
+    }
+    #submit {
+        margin-top: 0;
+        width: 30%;
+        height: 3em;
+    }
+    #submit:hover{
+        background-image: none;
+        background-color: hsl(176, 68%, 64%);
+        cursor: pointer;
+    }
+    /* footer */
+    footer {
+        padding: 15em 8em 3em;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-logo {
+        margin-bottom: 2em;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 65% 20% 15% ;
+    }
+    .contact{
+        display: flex;
+    }
+    .localisation{
+        display: flex;
+        width: 50%;
+    }
+    .localisation img{
+        width: 1.5em;
+        height: 1.5em;
+        margin-right: 1em;
+    }
+    .phone-email{
+        width: 50%;
+        margin-left: 3em;
+        display: flex;
+        flex-direction: column;
+    }
+    .phone{
+        margin-bottom: 1em;
+    }
+    .phone,
+    .email{
+        display: flex;
+    }
+    .phone img,
+    .email img{
+        margin-right: 1em;
+        width: 1.25em;
+        height: 1em;
+    }
+    .navigation{
+        display: flex;
+        margin-left: 0em;
+    }
+    footer ul {
+        margin-bottom: 0;
+        margin-right: 6em;
+    }    
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 0;
+        margin-left: 10em;
+    }
+    .social i:hover{
+        color: hsl(176, 68%, 64%);
+        border: 1px solid hsl(176, 68%, 64%);
+        cursor: pointer;
+    }
+
 }

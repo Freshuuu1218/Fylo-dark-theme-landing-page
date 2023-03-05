@@ -74,14 +74,16 @@
 
     <section id="productive">
       <img src="./images/illustration-stay-productive.png" alt="stay productive illustration">
-      <h2>Stay productive, wherever you are</h2>
-      <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
-      storage needs.</p>
-      <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email 
-      attachments required.</p>
-      <div class="link">
-        <a href="#">See how Fylo works</a>
-        <img src="./images/icon-arrow.svg" alt="arrow icon">
+      <div class="productive-text">
+        <h2>Stay productive, wherever you are</h2>
+        <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
+        storage needs.</p>
+        <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email 
+        attachments required.</p>
+        <div class="link">
+          <a href="#">See how Fylo works</a>
+          <img src="./images/icon-arrow.svg" alt="arrow icon">
+        </div>
       </div>
     </section>
 
@@ -129,11 +131,13 @@
       <h2>Get early access today</h2>
       <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
       questions, our support team would be happy to help you.</p>
-      <div class="input">
-        <input type="text" id="email" placeholder="email@example.com">
-        <span id="error" style="display: none">Please enter a valid email address</span>
+      <div class="form">
+        <div class="input">
+          <input type="text" id="email" placeholder="email@example.com">
+          <span id="error" style="display: none">Please enter a valid email address</span>
+        </div>
+        <button id="submit">Get Started For Free</button>
       </div>
-      <button id="submit">Get Started For Free</button>
     </section>
 
   </main>
@@ -143,31 +147,25 @@
     </div>
     <div class="content">
       <div class="contact">
-        <table>
-          <tr>
-            <td><img src="./images/icon-location.svg" alt="localisation icon"></td>
-            <td>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        <div class="localisation">
+            <img src="./images/icon-location.svg" alt="localisation icon">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua</p>
-            </td>
-          </tr>
-          <tr>
-            <td><img src="./images/icon-phone.svg" alt="phone icon"></td>
-            <td>
-              <p>+1-543-123-4567</p>
-            </td>
-          </tr>
-          <tr>
-            <td><img src="./images/icon-email.svg" alt="email icon"></td>
-            <td>
-              <p>example@fylo.com</p>
-            </td>
-          </tr>
-        </table>
+        </div>
+        <div class="phone-email">
+          <div class="phone">
+            <img src="./images/icon-phone.svg" alt="phone icon">
+            <p>+1-543-123-4567</p>
+          </div>
+          <div class="email">
+            <img src="./images/icon-email.svg" alt="email icon">
+            <p>example@fylo.com</p>
+          </div>
+        </div>
       </div>
       <div class="navigation">
         <ul>
-          <li>About Us</li>
+          <li>About</li>
           <li>Jobs</li>
           <li>Press</li>
           <li>Blog</li>
