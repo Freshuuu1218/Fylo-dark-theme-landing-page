@@ -337,7 +337,12 @@ footer ul li{
     }
     #pattern {
         top: 20%;
-    }    
+    }   
+        @-moz-document url-prefix() {
+            #pattern{
+                top: 22%;
+            }
+        }
     .intro-content img {
         width: 50%;
     }
@@ -388,6 +393,11 @@ footer ul li{
         width: 50%;
         margin-bottom: 0;
     }
+        @-moz-document url-prefix(){
+            #productive img{
+                width: 77.5%;
+            }
+        }
     #productive h2{
         font-size: 2.4em;
         width: 70%;
